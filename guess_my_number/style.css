@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./images/128283810_10158531147249303_4620375296666739736_n.jpg);
+    position: relative;
+}
+
+
+.container_section {
+    height: 780px;
+    width: 680px;
+    border-radius: 20px;
+    background-color: rgb(109, 105, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(1deg);
+}
+
+.container_section2 {
+    height: 780px;
+    width: 680px;
+    border: 2px solid rgb(114, 110, 86);
+    background-image: linear-gradient(to right, rgb(110, 80, 80), rgb(202, 231, 202));
+    border-radius: 20px;
+    position: absolute;
+}
+
+/* .container_section2 .playAgain {
+    position: relative;
+    left: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(71, 71, 25);
+    font-weight: bold;
+} */
+
+.topButtons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 40px 20px;
+}
+
+.playAgain {
+    font-weight: bold;
+    color: rgb(115, 133, 115);
+}
+
+.playAgain:hover {
+    color: rgb(63, 46, 46);
+}
+
+.gameRules {
+    font-weight: bold;
+    color: rgb(122, 26, 26);
+}
+
+.gameRules:hover {
+    color: rgb(3, 3, 3);
+}
+
+.container_section2 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    color: rgb(87, 73, 73);
+    text-shadow: 0 3px 10px #615e50;
+}
+
+.container_section2 h5 {
+    text-align: center;
+    color: rgb(104, 79, 79);
+    text-shadow: 0 3px 10px #b4b09b;
+}
+
+.container_section2 input {
+    margin-left: 238px;
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container_section2 .checkBtn {
+    position: relative;
+    left: 285px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: rgb(71, 71, 25);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container_section2 .checkBtn:hover {
+    transform: scale(1.1);
+}
+
+.guessNumber {
+    background-color: white;
+    width: 130px;
+    height: 130px;
+    padding: 30px;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 120px;
+    border: 3px solid #747267;
+}
+
+.guessNumBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerArea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.lastDesign {
+    margin-top: 30px;
+    animation-name: youWon;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes youWon {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.lastDesign2 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 3px 10px #85816e;
+}
+
+.btnRed {
+    color: rgb(143, 41, 41);
+}
+
+.overlay {
+    background-color: rgb(204, 169, 169);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.modaal {
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+    background-image: linear-gradient(to right, rgb(59, 68, 59), rgb(202, 193, 193));
+    color: white;
+    position: relative;
+    border-radius: 20px;
+    bottom: 620px;
+    left: 320px;
+    z-index: 2;
+}
+
+.closeBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+}
+
+.closeBtn:hover {
+    font-size: 38px;
+}
+
+.modaal ol {
+    margin-top: 30px;
+}
